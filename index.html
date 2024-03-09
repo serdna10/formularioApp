@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario y JavaScript mejorado</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <h1>Formulario de Ejemplo</h1>
+    <form id="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+        <br>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="Ingrese su correo electrónico">
+        <br>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Ingrese su mensaje"></textarea>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <div id="modal" class="oculto">
+        <div class="contenido-modal">
+            <h1>Datos capturados</h1>
+            <p>Nombre: ${nombre}</p>
+            <p>Correo: ${correo}</p>
+            <p>Mensaje: ${mensaje}</p>
+            <button id="cerrar-modal">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="./JS/act1.js"></script>
+</body>
+</html>
+
